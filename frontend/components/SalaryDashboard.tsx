@@ -58,7 +58,7 @@ export const SalaryDashboard = ({ provider, chainId }: SalaryDashboardProps) => 
             );
 
             try {
-              const [version, totalUsers, totalComparisons] = await contract.getContractInfo();
+              const [, totalUsers, totalComparisons] = await contract.getContractInfo();
               
               // Calculate realistic statistics based on real data
               // Using market data: US average salary ~$59,428, median ~$56,420 (2024)
@@ -79,7 +79,7 @@ export const SalaryDashboard = ({ provider, chainId }: SalaryDashboardProps) => 
                 : baseMedian;
 
               // Realistic distribution based on actual tech salary data
-              const distribution = calculateRealisticDistribution(userCount, calculatedAverage);
+              const distribution = calculateRealisticDistribution(userCount);
               
               // Realistic salary range based on market data
               const minSalary = Math.max(28000, calculatedMedian * 0.35);
@@ -138,7 +138,7 @@ export const SalaryDashboard = ({ provider, chainId }: SalaryDashboardProps) => 
   }, [provider, chainId, isConnected]);
 
   // Helper function to calculate realistic distribution
-  const calculateRealisticDistribution = (userCount: number, average: number) => {
+  const calculateRealisticDistribution = (userCount: number) => {
     if (userCount === 0) {
       return [
         { range: "$40k - $60k", count: 0, percentage: 0 },
@@ -150,7 +150,6 @@ export const SalaryDashboard = ({ provider, chainId }: SalaryDashboardProps) => 
     }
 
     // Realistic percentages based on tech industry distribution
-    const percentages = [14, 26, 30, 20, 10];
     return [
       { range: "$40k - $60k", count: Math.round(userCount * 0.14), percentage: 14 },
       { range: "$60k - $85k", count: Math.round(userCount * 0.26), percentage: 26 },

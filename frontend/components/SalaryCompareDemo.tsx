@@ -6,7 +6,7 @@ import { useMetaMaskEthersSigner } from "../hooks/metamask/useMetaMaskEthersSign
 import { useSalaryCompare } from "@/hooks/useSalaryCompare";
 import { errorNotDeployed } from "./ErrorNotDeployed";
 import { SalaryDashboard } from "./SalaryDashboard";
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo } from "react";
 import { useAccount } from "wagmi";
 
 function isValidEthereumAddress(address: string): boolean {
