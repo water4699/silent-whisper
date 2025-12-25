@@ -1,0 +1,28 @@
+# Demo Video Placeholder
+
+This file represents the demonstration video for the Encrypted Salary Compare project.
+
+## Video Contents:
+1. Project overview and introduction
+2. Smart contract deployment demonstration
+3. Frontend user interface walkthrough
+4. Salary submission and encryption process
+5. Private salary comparison functionality
+6. FHE (Fully Homomorphic Encryption) explanation
+7. Security features demonstration
+
+## Technical Specifications:
+- Duration: Approximately 5-7 minutes
+- Resolution: 1920x1080 (Full HD)
+- Format: MP4
+- Audio: Included with narration
+
+## Features Demonstrated:
+- End-to-end encrypted salary operations
+- Private comparison without data revelation
+- MetaMask wallet integration
+- Real-time transaction monitoring
+- User-friendly interface design
+- Error handling and validation
+
+Note: This is a placeholder file. The actual demonstration video would be created separately and added to the repository.

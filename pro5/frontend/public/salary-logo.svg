@@ -1,0 +1,35 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="url(#grad1)"/>
+  
+  <!-- Lock symbol representing encryption -->
+  <g transform="translate(100, 70)">
+    <rect x="-25" y="10" width="50" height="45" rx="5" fill="#ffffff" opacity="0.9"/>
+    <path d="M -20 10 L -20 -5 Q -20 -20 0 -20 Q 20 -20 20 -5 L 20 10" stroke="#ffffff" stroke-width="8" fill="none" opacity="0.9" stroke-linecap="round"/>
+    <circle cx="0" cy="28" r="6" fill="#4F46E5"/>
+    <rect x="-2" y="28" width="4" height="15" fill="#4F46E5"/>
+  </g>
+  
+  <!-- Dollar signs representing salary -->
+  <g transform="translate(65, 130)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#10B981">$</text>
+  </g>
+  <g transform="translate(120, 130)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#10B981">$</text>
+  </g>
+  
+  <!-- Comparison arrows -->
+  <path d="M 80 145 L 70 145" stroke="#6366F1" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 120 145 L 130 145" stroke="#6366F1" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 85 140 L 95 145 L 85 150" fill="none" stroke="#6366F1" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M 115 140 L 105 145 L 115 150" fill="none" stroke="#6366F1" stroke-width="3" stroke-linejoin="round"/>
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4F46E5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>
+
